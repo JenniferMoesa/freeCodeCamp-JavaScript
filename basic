@@ -1,6 +1,14 @@
-Comment Your JavaScript Code
+COMMENT YOUR JAVASCRIPT CODE
 
 // This is an in-line comment.
 
 /* This is a
 multi-line comment */
+
+
+DECLARE JAVASCRIPT VARIABLES
+We tell JavaScript to create or declare a variable by putting the keyword var in front of it, like so:
+
+var ourName;
+creates a variable called ourName. In JavaScript we end statements with semicolons.
+Variable names can be made up of numbers, letters, and $ or _, but may not contain spaces or start with a number.
