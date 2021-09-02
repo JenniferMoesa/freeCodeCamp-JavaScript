@@ -12,3 +12,17 @@ We tell JavaScript to create or declare a variable by putting the keyword var in
 var ourName;
 creates a variable called ourName. In JavaScript we end statements with semicolons.
 Variable names can be made up of numbers, letters, and $ or _, but may not contain spaces or start with a number.
+
+
+ASSIGNMENT WITH A RETURNED VALUE
+Call the processArg function with an argument of 7 and assign its return value to the variable processed.
+
+var processed = 0;
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
+
+processed = processArg(7);
+
+//processed has a value of 2
