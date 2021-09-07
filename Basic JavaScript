@@ -1,0 +1,70 @@
+COMMENT YOUR JAVASCRIPT CODE
+
+// This is an in-line comment.
+
+/* This is a
+multi-line comment */
+
+-------------------------------------------------------------------------------------------------------------------
+
+DECLARE JAVASCRIPT VARIABLES
+We tell JavaScript to create or declare a variable by putting the keyword var in front of it, like so:
+
+var ourName;
+creates a variable called ourName. In JavaScript we end statements with semicolons.
+Variable names can be made up of numbers, letters, and $ or _, but may not contain spaces or start with a number.
+
+---------------------------------------------------------------------------------------------------------------------
+
+STORING VALUES WITH THE ASSIGNMENT OPERATORPASSED
+In JavaScript, you can store a value in a variable with the assignment operator (=).
+
+myVariable = 5;
+This assigns the Number value 5 to myVariable.
+
+If there are any calculations to the right of the = operator,
+those are performed before the value is assigned to the variable on the left of the operator.
+
+var myVar;
+myVar = 5;
+First, this code creates a variable named myVar. Then, the code assigns 5 to myVar. 
+Now, if myVar appears again in the code, the program will treat it as if it is 5.
+
+----------------------------------------------------------------------------------------------------------------------
+
+
+
+ASSIGNING THE VALUE OF ONE VARIABLE TO ANOTHER
+After a value is assigned to a variable using the assignment operator,
+you can assign the value of that variable to another variable using the assignment operator.
+
+var myVar;
+myVar = 5;
+var myNum;
+myNum = myVar;
+The above declares a myVar variable with no value, then assigns it the value 5.
+Next, a variable named myNum is declared with no value. 
+Then, the contents of myVar (which is 5) is assigned to the variable myNum. Now, myNum also has the value of 5.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+ASSIGNMENT WITH A RETURNED VALUE
+Call the processArg function with an argument of 7 and assign its return value to the variable processed.
+
+var processed = 0;
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
+
+processed = processArg(7);
+
+//processed has a value of 2
