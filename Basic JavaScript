@@ -32,8 +32,6 @@ Now, if myVar appears again in the code, the program will treat it as if it is 5
 
 ----------------------------------------------------------------------------------------------------------------------
 
-
-
 ASSIGNING THE VALUE OF ONE VARIABLE TO ANOTHER
 After a value is assigned to a variable using the assignment operator,
 you can assign the value of that variable to another variable using the assignment operator.
