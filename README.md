@@ -1,4 +1,4 @@
-# freecodecampJavaScript
+# freeCodeCamp-JavaScript
 
 
 Basic Javascript, Regular Expressions, Debugging, Basic Data Structures,
