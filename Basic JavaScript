@@ -107,7 +107,7 @@ var sum = 10 + 10; // sum equals 20
 
 -------------------------------------------------------------------------------------------------------------------------------
 
-SUBSTRACT ONE NUMBER FRON ANOTHER WITH JAVASCRIPT
+SUBSTRACT ONE NUMBER FROM ANOTHER WITH JAVASCRIPT
 
 We can also subtract one number from another.
 
@@ -122,6 +122,24 @@ myVar would have the value 6.
 var difference = 45 - 33; //the difference is 12.
 
 ----------------------------------------------------------------------------------------------------------------------------------
+
+MULTIPLY TWO NUMBERS WITH JAVASCRIPT
+
+We can also multiply one number by another.
+
+JavaScript uses the * symbol for multiplication of two numbers.
+
+Example
+
+myVar = 13 * 13;
+myVar would have the value 169.
+
+var product = 8 * 10; // product equals 80.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 
 
