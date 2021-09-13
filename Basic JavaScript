@@ -107,7 +107,21 @@ var sum = 10 + 10; // sum equals 20
 
 -------------------------------------------------------------------------------------------------------------------------------
 
+SUBSTRACT ONE NUMBER FRON ANOTHER WITH JAVASCRIPT
 
+We can also subtract one number from another.
+
+JavaScript uses the - symbol for subtraction.
+
+Example
+
+myVar = 12 - 6;
+myVar would have the value 6.
+
+
+var difference = 45 - 33; //the difference is 12.
+
+----------------------------------------------------------------------------------------------------------------------------------
 
 
 
