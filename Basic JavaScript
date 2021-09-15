@@ -119,7 +119,7 @@ myVar = 12 - 6;
 myVar would have the value 6.
 
 
-var difference = 45 - 33; //the difference is 12.
+var difference = 45 - 33; // the difference is 12.
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
@@ -166,6 +166,7 @@ Note: The entire line becomes i++;, eliminating the need for the equal sign.
 var myVar = 87;
 myVar ++; // myVar = myVar + 1;
 
+
 ---------------------------------------------------------------------------------------------------------------------------------
 
 DECREMENT (VERMINDEREN) A NUMBER WITH JAVASCRIPT
@@ -179,9 +180,8 @@ i = i - 1;
 Note: The entire line becomes i--;, eliminating the need for the equal sign.
 
 var myVar = 11;
-
-// Only change code below this line
 myVar --; // myVar = myVar - 1;
+
 
 ------------------------------------------------------------------------------------------------------------------------------
 
