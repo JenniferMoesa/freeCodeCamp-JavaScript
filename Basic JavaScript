@@ -138,6 +138,55 @@ var product = 8 * 10; // product equals 80.
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
+DIVIDE ONE NUMBER BY ANOTHER WITH JAVASCRIPT
+
+We can also divide one number by another.
+
+JavaScript uses the / symbol for division.
+
+Example
+
+myVar = 16 / 2; // myVar now has the value 8.
+
+var quotient = 66 / 33; // quotient is equal to 2.
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+INCREMENT (VERHOGEN) A NUMBER WITH JAVASCRIPT
+
+You can easily increment or add one to a variable with the ++ operator.
+
+i++;
+is the equivalent of
+
+i = i + 1;
+Note: The entire line becomes i++;, eliminating the need for the equal sign.
+
+var myVar = 87;
+myVar ++; // myVar = myVar + 1;
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+DECREMENT (VERMINDEREN) A NUMBER WITH JAVASCRIPT
+
+You can easily decrement or decrease a variable by one with the -- operator.
+
+i--;
+is the equivalent of
+
+i = i - 1;
+Note: The entire line becomes i--;, eliminating the need for the equal sign.
+
+var myVar = 11;
+
+// Only change code below this line
+myVar --; // myVar = myVar - 1;
+
+------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 
 
