@@ -185,6 +185,28 @@ myVar --; // myVar = myVar - 1;
 
 ------------------------------------------------------------------------------------------------------------------------------
 
+CREATE DECIMAL NUMBERS WITH JAVASCRIPT
+
+We can store decimal numbers in variables too. Decimal numbers are sometimes referred to as floating point numbers or floats.
+
+Note: Not all real numbers can accurately be represented in floating point. This can lead to rounding errors
+
+var myDecimal = 5.7;
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+MULTIPLY TWO DECIMALS WITH JAVASCRIPT
+
+In JavaScript, you can also perform calculations with decimal numbers, just like whole numbers.
+
+Let's multiply two decimals together to get their product.
+
+var product = 2.0 * 2.5; // product equals 5
+
+------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 
 
