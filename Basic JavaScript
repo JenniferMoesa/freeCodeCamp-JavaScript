@@ -314,6 +314,164 @@ processed = processArg(7);
 
 ----------------------------------------------------------------------------------------------------------------------------
 
+STAND IN LINE
+
+In Computer Science a queue is an abstract Data Structure where items are kept in order.
+New items can be added at the back of the queue and old items are taken off from the front of the queue.
+
+FIRST
+function nextInLine(arr, item) {
+  // Your code here
+  arr.push(item);
+  return item; 
+}
+
+var testArr = [1,2,3,4,5];
+
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
+
+AFTER
+function nextInLine(arr, item) {
+  // Your code here
+  arr.push(item);
+  return arr.shift(); 
+}
+
+var testArr = [1,2,3,4,5];
+
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
+
+----------------------------------------------------------------------------------------------------------------------------
+
+UNDERSTANDING BOOLEAN VALUES
+
+Another data type is the Boolean. Booleans may only be one of two values: true or false.
+They are basically little on-off switches, where true is on and false is off. These two states are mutually exclusive.
+
+Note: Boolean values are never written with quotes. The strings "true" and "false" are not Boolean
+and have no special meaning in JavaScript.
+
+function welcomeToBooleans() {
+  return true; 
+}
+
+-----------------------------------------------------------------------------------------------------------------------
+
+USE CONDITIONAL LOGIC WITH IF STATEMENTS
+
+If statements are used to make decisions in code.
+The keyword if tells JavaScript to execute the code in the curly braces under certain conditions, defined in the parentheses.
+These conditions are known as Boolean conditions and they may only be true or false.
+
+When the condition evaluates to true, the program executes the statement inside the curly braces.
+When the Boolean condition evaluates to false, the statement inside the curly braces will not execute.
+
+Pseudocode
+
+if (condition is true) {
+  statement is executed
+}
+
+Example
+
+function test (myCondition) {
+  if (myCondition) {
+     return "It was true";
+  }
+  return "It was false";
+}
+test(true);
+test(false);
+test(true) returns the string It was true, and test(false) returns the string It was false.
+
+When test is called with a value of true, the if statement evaluates myCondition to see if it is true or not.
+Since it is true, the function returns It was true.
+
+When we call test with a value of false,
+myCondition is not true and the statement in the curly braces is not executed and the function returns It was false.
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+COMPARISON WITH THE EQUALITY OPERATOR 
+
+There are many comparison operators in JavaScript. All of these operators return a boolean true or false value.
+
+The most basic operator is the equality operator ==.
+The equality operator compares two values and returns true if they're equivalent or false if they are not.
+Note that equality is different from assignment (=), which assigns the value on the right of the operator to a variable on the left.
+
+function equalityTest(myVal) {
+  if (myVal == 10) {
+     return "Equal";
+  }
+  return "Not Equal";
+}
+
+If myVal is equal to 10, the equality operator returns true,
+so the code in the curly braces will execute, and the function will return Equal.
+Otherwise, the function will return Not Equal.
+In order for JavaScript to compare two different data types (for example, numbers and strings),
+it must convert one type to another. This is known as Type Coercion. Once it does, however, it can compare terms as follows:
+
+1   ==  1 // true
+1   ==  2 // false
+1   == '1' // true
+"3" ==  3 // true
+
+// Setup
+function testEqual(val) {
+  if (val == 12) { // val is equal to 12
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+testEqual(10);
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+COMPARISON WITH THE STRICT EQUALITY OPERATOR
+
+Strict equality (===) is the counterpart to the equality operator (==).
+However, unlike the equality operator, which attempts to convert both values being compared to a common type, the strict equality operator does not perform a type conversion.
+
+If the values being compared have different types, they are considered unequal, and the strict equality operator will return false.
+
+Examples
+
+3 ===  3 // true, number type
+3 === '3' // false , 3 is a Number type and '3' is a String type.
+
+
+// Setup
+function testStrict(val) {
+  if (val === 7) { // val is strictly equal to 7
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+testStrict(10);
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
