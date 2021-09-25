@@ -281,6 +281,49 @@ c -= 1;
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
+COMPOUND ASSIGNMENT WITH AUGMENTED MULTIPLICATION
+
+The *= operator multiplies a variable by a number.
+
+myVar = myVar * 5;
+will multiply myVar by 5. This can be rewritten as:
+
+myVar *= 5;
+
+var a = 5;
+var b = 12;
+var c = 4.6;
+
+// Only change code below this line
+a *= 5;
+b *= 3;
+c *= 10;
+
+---------------------------------------------------------------------------------------------------------
+
+COMPOUND ASSIGNMENT WITH AUGMENTED DIVISION
+
+The /= operator divides a variable by another number.
+
+myVar = myVar / 5;
+Will divide myVar by 5. This can be rewritten as:
+
+myVar /= 5;
+
+var a = 48;
+var b = 108;
+var c = 33;
+
+// Only change code below this line
+a /= 12; // a = a /12;
+b /= 4; // b = b / 4;
+c /= 11; // c = c / 11;
+
+-------------------------------------------------------------------------------------------------------------
+
+
+
+
 
 
 
