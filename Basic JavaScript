@@ -981,7 +981,7 @@ functionWithArgs(5,10);
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
-GLOBAL SCOPTE AND FUNCTIONS
+GLOBAL SCOPE AND FUNCTIONS
 
 In JavaScript, scope refers to the visibility of variables. Variables which are defined outside of a function block have Global scope.
 This means, they can be seen everywhere in your JavaScript code.
@@ -1016,6 +1016,11 @@ function fun2() {
   console.log(output);
 }
 
+// running tests
+// tests completed
+// console output
+myGlobal: 10 oopsGlobal: 5
+
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 LOCAL SCOPE AND FUNCTIONS
@@ -1040,9 +1045,23 @@ Check the console as you code to see how it changes. Declare a local variable my
 
 Note: The console will still display ReferenceError: myVar is not defined, but this will not cause the tests to fail
 
+function myLocalScope() {
 
+  // Only change code below this line
+  var myVar = 10;
+  console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
 
+// Run and check the console
+// myVar is not defined outside of myLocalScope
+console.log('outside myLocalScope', myVar);
 
+// console output
+inside myLocalScope 10
+ReferenceError: myVar is not defined
+
+---------------------------------------------------------------------------------------------------------------------------------------
 
 
 
