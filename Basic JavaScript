@@ -1063,18 +1063,94 @@ ReferenceError: myVar is not defined
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
+GLOBAL VS. LOCAL SCOPE IN FUNCTIONS
+
+It is possible to have both local and global variables with the same name.
+When you do this, the local variable takes precedence over the global variable.
+
+In this example:
+
+var someVar = "Hat";
+function myFun() {
+  var someVar = "Head";
+  return someVar;
+}
+
+The function myFun will return the string Head because the local version of the variable is present.
+
+excercise:
+Add a local variable to myOutfit function to override the value of outerWear with the string sweater.
+
+// Setup
+var outerWear = "T-Shirt";
+
+function myOutfit() {
+  // Only change code below this line
+  var outerWear = "sweater";
 
 
+  // Only change code above this line
+  return outerWear;
+}
 
+myOutfit();
 
+// console
+// sweater
+----------------------------------------------------------------------------------------------------------------------------------
 
+RETURN A VALUE FROM A FUNCTION WITH RETURN
 
+We can pass values into a function with arguments. You can use a return statement to send a value back out of a function.
 
+Example
 
+function plusThree(num) {
+  return num + 3;
+}
+var answer = plusThree(5);
+answer has the value 8.
 
+plusThree takes an argument for num and returns a value equal to num + 3.
 
+excercise:
+Create a function timesFive that accepts one argument, multiplies it by 5, and returns the new value.
 
----------------------------------------------------------------------------------------------------------------------------------------
+function timesFive(num) {
+     return num * 5;
+   } 
+  var answer = timesFive(5);
+
+  //console.log(timesFive(5));
+  //25
+  
+  ------------------------------------------------------------------------------------------------------------------
+
+UNDERSTANDING UNDEFINED VALUE RETURNED FROM A FUNCTION
+
+A function can include the return statement but it does not have to.
+In the case that the function doesn't have a return statement,
+when you call it, the function processes the inner code but the returned value is undefined.
+
+Example
+
+var sum = 0;
+function addSum(num) {
+  sum = sum + num;
+}
+addSum(3);
+
+addSum is a function without a return statement.
+The function will change the global sum variable but the returned value of the function is undefined.
+
+excercise:
+Create a function addFive without any arguments.
+This function adds 5 to the sum variable, but its returned value is undefined.
+
+//console.log(addThree(5)); undefined
+//console.log(addFive(5)); undefined
+
+----------------------------------------------------------------------------------------------------------------------------
 
 ASSIGNMENT WITH A RETURNED VALUE
 Call the processArg function with an argument of 7 and assign its return value to the variable processed.
