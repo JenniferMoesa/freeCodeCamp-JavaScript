@@ -1378,6 +1378,148 @@ console.log(testNotEqual(10));// Not Equal
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
+COMPARISON WITH THE STRICT INEQUALITY OPERATOR
+
+The strict inequality operator (!==) is the logical opposite of the strict equality operator.
+It means "Strictly Not Equal" and returns false where strict equality would return true and vice versa.
+The strict inequality operator will not convert data types.
+
+Examples
+
+3 !==  3 // false
+3 !== '3' // true
+4 !==  3 // true
+
+excercise:
+Add the strict inequality operator to the if statement so the function will return the string Not Equal when val is not strictly equal to 17
+
+// Setup
+function testStrictNotEqual(val) {
+  if (val !== 17) { // Change this line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+console.log(testStrictNotEqual(10)); // Not Equal
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+COMPARISON WITH THE GREATER THAN OPERATOR
+
+The greater than operator (>) compares the values of two numbers.
+If the number to the left is greater than the number to the right, it returns true. Otherwise, it returns false.
+
+Like the equality operator, the greater than operator will convert data types of values while comparing.
+
+Examples
+
+5   >  3 // true
+7   > '3' // true
+2   >  3 // false
+'1' >  9 // false
+
+excercise:
+Add the greater than operator to the indicated lines so that the return statements make sense.
+
+function testGreaterThan(val) {
+  if (val > 100) {  // Change this line
+    return "Over 100";
+  }
+
+  if (val > 10) {  // Change this line
+    return "Over 10";
+  }
+
+  return "10 or Under";
+}
+
+console.log(testGreaterThan(10)); // 10 or under
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+COMPARISON WITH THE GREATER THAN OR EQUAL TO OPERATOR
+
+The greater than or equal to operator (>=) compares the values of two numbers.
+If the number to the left is greater than or equal to the number to the right, it returns true. Otherwise, it returns false.
+
+Like the equality operator, the greater than or equal to operator will convert data types while comparing.
+
+Examples
+
+6   >=  6 // true
+7   >= '3' // true
+2   >=  3 // false
+'7' >=  9 // false
+
+excercise:
+Add the greater than or equal to operator to the indicated lines so that the return statements make sense.
+
+function testGreaterOrEqual(val) {
+  if (val >= 20) {  // Change this line
+    return "20 or Over";
+  }
+
+  if (val >= 10) {  // Change this line
+    return "10 or Over";
+  }
+
+  return "Less than 10";
+}
+
+console.log(testGreaterOrEqual(10)); // 10 or over
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+COMPARISON WITH THE LESS THAN OPERATOR
+
+The less than operator (<) compares the values of two numbers.
+If the number to the left is less than the number to the right, it returns true.
+Otherwise, it returns false. Like the equality operator, the less than operator converts data types while comparing.
+
+Examples
+
+2   < 5 // true
+'3' < 7 // true
+5   < 5 // false
+3   < 2 // false
+'8' < 4 // false
+
+excercise:
+Add the less than operator to the indicated lines so that the return statements make sense.
+
+function testLessThan(val) {
+  if (val < 25) {  // Change this line
+    return "Under 25";
+  }
+
+  if (val < 55) {  // Change this line
+    return "Under 55";
+  }
+
+  return "55 or Over";
+}
+
+console.log(testLessThan(10)); // Under 25
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+Comparison with the Less Than Or Equal To OperatorPassed
+The less than or equal to operator (<=) compares the values of two numbers.
+If the number to the left is less than or equal to the number to the right, it returns true.
+If the number on the left is greater than the number on the right, it returns false. Like the equality operator, the less than or equal to operator converts data types.
+
+Examples
+
+4   <= 5
+'7' <= 7
+5   <= 5
+3   <= 2
+'8' <= 4
+In order, these expressions would evaluate to true, true, true, false, and false.
+
+
 
 
 
