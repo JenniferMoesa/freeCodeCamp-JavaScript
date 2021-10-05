@@ -1504,20 +1504,81 @@ console.log(testLessThan(10)); // Under 25
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
+COMPARISON WITH THE LESS THAN OR EQUAL TO OPERATOR
 
-Comparison with the Less Than Or Equal To OperatorPassed
 The less than or equal to operator (<=) compares the values of two numbers.
 If the number to the left is less than or equal to the number to the right, it returns true.
 If the number on the left is greater than the number on the right, it returns false. Like the equality operator, the less than or equal to operator converts data types.
 
 Examples
 
-4   <= 5
-'7' <= 7
-5   <= 5
-3   <= 2
-'8' <= 4
-In order, these expressions would evaluate to true, true, true, false, and false.
+4   <= 5 // true
+'7' <= 7 // true
+5   <= 5 // true
+3   <= 2 // false
+'8' <= 4 // false
+
+excercise:
+Add the less than or equal to operator to the indicated lines so that the return statements make sense.
+
+function testLessOrEqual(val) {
+  if (val <= 12) {  // Change this line
+    return "Smaller Than or Equal to 12";
+  }
+
+  if (val <= 24) {  // Change this line
+    return "Smaller Than or Equal to 24";
+  }
+
+  return "More Than 24";
+}
+
+console.log(testLessOrEqual(10)); // Smaller Than or Equal to 12
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+COMPARISONS WITH THE LOGICAL AND OPERATOR
+
+Sometimes you will need to test more than one thing at a time.
+The logical and operator (&&) returns true if and only if the operands to the left and right of it are true.
+
+The same effect could be achieved by nesting an if statement inside another if:
+
+if (num > 5) {
+  if (num < 10) {
+    return "Yes";
+  }
+}
+return "No";
+will only return Yes if num is greater than 5 and less than 10. The same logic can be written as:
+
+if (num > 5 && num < 10) {
+  return "Yes";
+}
+return "No";
+
+excercise:
+Replace the two if statements with one statement, using the && operator,
+which will return the string Yes if val is less than or equal to 50 and greater than or equal to 25.
+Otherwise, will return the string No.
+
+function testLogicalAnd(val) {
+  // Only change code below this line
+
+  if (val <= 50 && val >= 25) {
+      return "Yes";
+  }
+
+  // Only change code above this line
+  return "No";
+}
+
+console.log(testLogicalAnd(10)); // No
+
+------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 
 
