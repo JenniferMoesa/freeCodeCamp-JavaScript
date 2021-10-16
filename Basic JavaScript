@@ -2027,17 +2027,61 @@ function chainToSwitch(val) {
 
 console.log(chainToSwitch(1)); // There is no #1
 
------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------
 
+RETURNING BOOLEAN VALUES FROM FUNCTIONS
 
+You may recall from Comparison with the Equality Operator that all comparison operators return a boolean true or false value.
 
+Sometimes people use an if/else statement to do a comparison, like this:
 
+function isEqual(a,b) {
+  if (a === b) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
+But there's a better way to do this. Since === returns true or false, we can return the result of the comparison:
 
+function isEqual(a,b) {
+  return a === b;
+}
 
+excercise:
+Fix the function isLess to remove the if/else statements.
 
+function isLess(a, b) {
+  // Only change code below this line
+  return (a < b);
+  // Only change code above this line
+}
 
+console.log(isLess(10, 15)); // true
 
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+RETURN EARLY PATTERN FOR FUNCTIONS
+
+When a return statement is reached, the execution of the current function stops and control returns to the calling location.
+
+Example
+
+function myFun() {
+  console.log("Hello");
+  return "World";
+  console.log("byebye")
+}
+myFun();
+The above will display the string Hello in the console, and return the string World.
+The string byebye will never display in the console, because the function exits at the return statement.
+
+excercise:
+Modify the function abTest so that if a or b are less than 0 the function will immediately exit with a value of undefined.
+
+Hint
+Remember that undefined is a keyword, not a string.
 
 
 
