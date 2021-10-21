@@ -2300,6 +2300,7 @@ someProp would have a value of the string propName, and the string John would be
 Note that we do not use quotes around the variable name when using it to access the property because we are using the value of the variable,
 not the name.
 
-
+excercise:
+Set the playerNumber variable to 16. Then, use the variable to look up the player's name and assign it to player.
 
 
