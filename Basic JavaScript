@@ -2357,8 +2357,8 @@ Here's how we would add a bark property to ourDog:
 
 ourDog.bark = "bow-wow";
 or
-
 ourDog["bark"] = "bow-wow";
+
 Now when we evaluate ourDog.bark, we'll get his bark, bow-wow.
 
 Example:
@@ -2371,6 +2371,79 @@ var ourDog = {
 };
 
 ourDog.bark = "bow-wow";
+
+EXCERCISE
+Add a bark property to myDog and set it to a dog sound, such as "woof". You may use either dot or bracket notation.
+
+var myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+myDog.bark = "woof";
+
+console.log(myDog);
+
+CONSOLE
+{ name: 'Happy Coder',
+  legs: 4,
+  tails: 1,
+  friends: [ 'freeCodeCamp Campers' ],
+  bark: 'woof' }
+
+------------------------------------------------------------------------------------------------------------------------
+
+DELETE PROPERTIES FROM A JAVASCRIPT OBJECT
+
+We can also delete properties from objects like this:
+
+delete ourDog.bark;
+Example:
+
+var ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"],
+  "bark": "bow-wow"
+};
+
+delete ourDog.bark;
+
+After the last line shown above, ourDog looks like:
+
+{
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+}
+
+EXCERCISE
+Delete the tails property from myDog. You may use either dot or bracket notation.
+
+// Setup
+var myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"],
+  "bark": "woof"
+};
+
+// Only change code below this line
+delete myDog.tails;
+console.log(myDog);
+
+CONSOLE
+{ name: 'Happy Coder',
+  legs: 4,
+  friends: [ 'freeCodeCamp Campers' ],
+  bark: 'woof' }
+  
+  ---------------------------------------------------------------------------------------------------
 
 
 
