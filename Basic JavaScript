@@ -2849,7 +2849,7 @@ You can run the same code multiple times by using a loop.
 The first type of loop we will learn is called a while loop because it runs while a specified condition is true and stops once that condition is no longer true.
 
 var ourArray = [];
-var i = 0;
+var i = 0; // It's standard practice to call the variable that you're incrementing i, for the the next variable it's standard to call it j.
 while(i < 5) {
   ourArray.push(i);
   i++;
@@ -2965,6 +2965,136 @@ for (var i = 10; i > 0; i -= 2) {
 
 ourArray will now contain [10,8,6,4,2].
 Let's change our initialization and final expression so we can count backwards by twos to create an array of descending odd numbers.
+
+excercise:
+Push the odd numbers from 9 through 1 to myArray using a for loop.
+
+// Setup
+const myArray = [];
+
+// Only change code below this line
+
+
+solution:
+
+// Setup
+const myArray = [];
+
+// Only change code below this line
+for (let i = 9; i > 0; i -= 2) {
+  myArray.push(i);
+}
+
+console.log(myArray);
+
+--------------------------------------------------------------------------------------------------------------------
+
+ITERATE THROUGH AN ARRAY WITH A FOR LOOP
+
+A common task in JavaScript is to iterate through the contents of an array. One way to do that is with a for loop.
+This code will output each element of the array arr to the console:
+
+const arr = [10, 9, 8, 7, 6];
+
+for (let i = 0; i < arr.length; i++) {
+   console.log(arr[i]);
+}
+
+Remember that arrays have zero-based indexing, which means the last index of the array is length - 1.
+Our condition for this loop is i < arr.length, which stops the loop when i is equal to length.
+In this case the last iteration is i === 4 i.e. when i becomes equal to arr.length - 1 and outputs 6 to the console.
+Then i increases to 5, and the loop terminates because i < arr.length is false.
+
+excersise:
+Declare and initialize a variable total to 0. Use a for loop to add the value of each element of the myArr array to total.
+
+// Setup
+var myArr = [2, 3, 4, 5, 6];
+
+// Only change code below this line
+
+
+solution:
+// Setup
+var myArr = [2, 3, 4, 5, 6];
+
+// Only change code below this line
+var total = 0;
+
+for (var i = 0; i < myArr.length; i++) {
+  total += myArr[i];
+}
+
+console.log(total);
+
+---------------------------------------------------------------------------------------------------
+
+NESTING FOR LOOPS
+
+If you have a multi-dimensional array, you can use the same logic as the prior waypoint to loop through both the array and any sub-arrays.
+Here is an example:
+
+const arr = [
+  [1, 2], [3, 4], [5, 6]
+];
+
+for (let i = 0; i < arr.length; i++) {
+  for (let j = 0; j < arr[i].length; j++) {
+    console.log(arr[i][j]);
+  }
+}
+
+This outputs each sub-element in arr one at a time.
+Note that for the inner loop, we are checking the .length of arr[i], since arr[i] is itself an array.
+
+excercise:
+Modify function multiplyAll so that it returns the product of all the numbers in the sub-arrays of arr.
+
+function multiplyAll(arr) {
+  let product = 1;
+  // Only change code below this line
+
+  // Only change code above this line
+  return product;
+}
+
+multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
+
+
+solution: 
+function multiplyAll(arr) {
+  let product = 1;
+  
+  for (let i=0; i < arr.length; i++) {
+    for (let j=0; j < arr[i].length; j++) { // It's standard practice to call the variable that you're incrementing i, for the the next variable it's standard to call it j.
+      product *= arr[i][j];
+    }
+  }
+
+  return product;
+}
+
+let product = multiplyAll([[1,2],[3,4],[5,6,7]]);
+
+console.log(product); 
+
+/* 
+multiplyAll([[1], [2], [3]]) should return 6
+
+Passed
+multiplyAll([[1, 2], [3, 4], [5, 6, 7]]) should return 5040
+
+Passed
+multiplyAll([[5, 1], [0.2, 4, 0.5], [3, 9]]) should return 54 */
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
 
 
 
