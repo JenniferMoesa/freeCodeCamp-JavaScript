@@ -3459,6 +3459,22 @@ convertToInteger("10011");
 
 solution:
 
+function convertToInteger(str) {
+  return parseInt(str, 2);
+}
 
+convertToInteger("10011");
+
+console.log(convertToInteger("10011"));
+console.log(convertToInteger("111001"));
+console.log(convertToInteger("JamesBond"));
+
+console
+19
+57
+NaN
+
+
+------------------------------------------------------------------------------------------------
 
 
